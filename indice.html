@@ -6,9 +6,18 @@
     <title>Practica3.3</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<h1>Practica bloque 3</h1>
+<h1 class="azul">Practica bloque 3</h1>
+
+<script>
+    function funcion_nom_apellido() {
+      var nom = document.getElementById("nom").value;
+      var apellido = document.getElementById("apellido").value;
+      alert ('Bienvenido ' + nom + ' '+ apellido);
+    }
+</script>
+
 <body>
-    <p>Introduce nombre</p>
-    
+    Introduce nombre<input type="text" id="nom">
+    Introduce apellido1:<input type="text" id="apellido" onblur="funcion_nom_apellido()">
 </body>
 </html>
